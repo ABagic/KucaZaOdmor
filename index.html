@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ovo je stranica kuće za odmor Nikola">
+    <title>Kuća za odmor Grijak</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/54a60e8e7b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="naslovnica">
+        <nav class="wrapper">
+            <input type="checkbox" class="toggle-navigation">
+            <div class="hamburger"></div>
+            <ul class="menu">
+                <li><a aria-label="link za naslovnicu" href="#naslovnica">Naslovnica</a></li>
+                <li><a aria-label="link za galeriju" href="#opis">O kući</a></li>
+                <li><a aria-label="link za galeriju" href="#galerija">Galerija</a></li>
+                <li><a aria-label="link za lokaciju" href="#lokacija">Lokacija</a></li>
+                <li><a aria-label="link za kontakt" href="#kontakt">Kontakt</a></li>
+                <li><a aria-label="link za facebook profil"
+                        href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"><i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a aria-label="link za  instagram profil" href="https://www.instagram.com/kucazaodmornikola/"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+        <div class="wrapper naslovni-tekst">
+            <h1>Kuća za odmor </h1><span>"Nikola"</span>
+            <div class="buttons">
+                <a aria-label="link za airbnb profil"
+                    href="https://hr.airbnb.com/rooms/35737091?s=67&unique_share_id=054f41e5-f93f-4c57-8f79-3181bf9a8894">Airbnb</a>
+                <a aria-label="link za slanje maila" href="mailto:kucazaodmornikola14@gmail.com"
+                    target="_blank">e-mail</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <h2>O kući</h2>
+        <p>Na mirnom i tihom mjestu u Vrhovinama smještena je kuća za odmor Nikola. Okružena šumom, brežuljcima te
+            ponekim zvukom ovaca u blizini, savršena je za odmor od bučnog gradskog života. U kući, koja je
+            namijenjena za boravak 6 osoba, nalaze se 2 spavaće sobe, WC, kupaonica, kuhinja, ostava i dnevni
+            boravak. Prostrano dvorište je ograđeno, stoga su i Vaši kućni ljubimci dobrodošli. Kako ne biste u
+            potpunosti izgubili kontakt s „vanjskim svijetom“, možete se spojiti na Wi-Fi. Ipak, nastojte se što
+            više povezati s prirodom te boraviti na svježem zraku koji je idealan za miran san. Ako ste
+            avanturistički tip, posjetite zip-line Pazi Medo, koji je od kuće udaljen svega 5 km. Ostale aktivnosti
+            koje možete isprobati sami ili sa svojim najbližima su planinarenje, biciklizam, ribolov,kajakarenje… I
+            to sve samo na pola sata vožnje od kuće Nikola!</p>
+    </main>
+
+    <section class="ponuda wrapper" id="opis">
+        <h2>Ponuda</h2>
+        <div class="tablice-ponuda">
+            <table class="ponude">
+                <tr>
+                    <th colspan="3">SPAVAĆE SOBE I KREVETI</th>
+                </tr>
+                <tr>
+                    <td><span>Spavaća soba 1</span> <br><i class="fa-solid fa-bed"></i> 3 jednostruka kreveta</td>
+                    <td><span>Spavaća soba 2</span> <br><i class="fa-solid fa-bed"></i> 2 jednostruka kreveta</td>
+                    <td><span>Dnevni boravak</span> <br><i class="fa-solid fa-couch"></i> 1 kauč</td>
+                </tr>
+            </table>
+            <table class="ponude">
+                <tr>
+                    <th colspan="4">USLUGE</th>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-car-rear"></i> Besplatan parking u sklopu smještaja</td>
+                    <td><i class="fa-solid fa-paw"></i> Kućni ljubimci dobrodošli</td>
+                    <td><i class="fa-solid fa-suitcase"></i> Dozvoljeno ostavljanje prtljage</td>
+                    <td><i class="fa-solid fa-smoking"></i> Dozvoljeno pušenje</td>
+                </tr>
+            </table>
+            <table class="ponude">
+                <tr>
+                    <th colspan="6">ZABAVA</th>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-mountain-sun"></i> Pogled na planine</td>
+                    <td><i class="fa-solid fa-seedling"></i> Pogled na dvorište</td>
+                    <td><i class="fa-solid fa-tv"></i> TV</td>
+                    <td><i class="fa-solid fa-wifi"></i> Wi-Fi</td>
+                    <td><i class="fa-solid fa-seedling"></i> Privatno stražnje dvorište</td>
+                    <td><i class="fa-solid fa-fire-burner"></i> Roštilj</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="galerija" id="galerija">
+        <h2 class="wrapper">Galerija</h2>
+        <ul class="slides-container" id="slides-container">
+        </ul>
+        <div class="dots-container"></div>
+    </section>
+
+
+    <section class="wrapper lokacija" id="lokacija">
+        <h2>Lokacija</h2>
+        <p><i class="fa-solid fa-location-dot"></i>Seoci 14 A, Vrhovine</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.2893585078673!2d15.404942515751891!3d44.85640378181243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4763e137b16125ad%3A0xab15ffa034e70afd!2sKu%C4%87a%20za%20odmor%20%22Nikola%22!5e0!3m2!1shr!2shr!4v1590766162433!5m2!1shr!2shr"
+            width="100%" height="450px" allowfullscreen="" aria-hidden="false" tabindex="0"
+            title="google maps"></iframe>
+    </section>
+
+    <section class="wrapper" id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="kontakti">
+            <div class="kontakt">
+                <h3>BROJ TELEFONA</h3>
+                <p><i class="fa-solid fa-phone"></i> 091 622 0279</p>
+            </div>
+            <div class="kontakt">
+                <h3>EMAIL ADRESA</h3>
+                <a aria-label="link za slanje maila" href="mailto:kucazaodmornikola14@gmail.com" target="_blank"><i
+                        class="fa-solid fa-at"></i>
+                    kucazaodmornikola14@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="partneri">
+        <div class="wrapper">
+            <img src="partneri/NP_plitvicka_jezera_logo-07.png" alt="logo plitvičkih jezera">
+            <img src="partneri/Lika_Destination_Smart_Sustainable_Destination.png" alt="logo lika destination">
+            <img src="partneri/logo_IQM_Lika.png" alt="logo IQM Lika">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="footer-content wrapper">
+
+                <p class="footer-title">Kuća za odmor "Nikola"</p>
+                <div>
+                    <ul>
+                        <li><a aria-label="link za naslovnicu" href="#naslovnica">Naslovnica</a></li>
+                        <li><a aria-label="link za galeriju" href="#opis">O kući</a></li>
+                        <li><a aria-label="link za galeriju" href="#galerija">Galerija</a></li>
+                        <li><a aria-label="link za lokaciju" href="#lokacija">Lokacija</a></li>
+                        <li><a aria-label="link za kontakt" href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-kontakti">
+                    <span>Kontaktirajte nas</span>
+                    <p><i class="fa-solid fa-phone"></i> 091 622 0279</p>
+                    <p><a a aria-label="link za slanje maila" href="mailto:kucazaodmornikola14@gmail.com"
+                            target="_blank">
+                            <i class="fa-solid fa-at"></i> kucazaodmornikola14@gmail.com</a></p>
+                    <div class="drustvene-mreze">
+                        <a aria-label="link za facebook profil"
+                            href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a aria-label="link za  instagram profil" href="https://www.instagram.com/kucazaodmornikola/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023</p>
+            <img src="designvibe_logo.svg">
+        </div>
+    </footer>
+
+    <script src="galerija.js"></script>
+</body>
+
+</html>

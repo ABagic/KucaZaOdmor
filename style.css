@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("slike/ulaz2.png"),
+    linear-gradient(
+      160deg,
+      #ffffff 22.05%,
+      rgba(220, 238, 255, 0.242) 42.59%,
+      rgba(25, 147, 191, 0.316) 99.68%
+    );
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 600px;
+}
+
+section {
+  padding-top: 60px;
+}
+
+nav {
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+}
+.menu li {
+  list-style: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 40px;
+  width: 30px;
+  height: 5px;
+  background: black;
+  cursor: pointer;
+  z-index: 3;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  left: 0;
+  background: black;
+}
+.hamburger::before {
+  top: -10px;
+  transition: 0.5s;
+}
+.hamburger::after {
+  top: 10px;
+  transition: 0.5s;
+}
+
+.toggle-navigation {
+  position: absolute;
+  top: 28px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 4;
+}
+
+.hamburger,
+.toggle-navigation {
+  display: none;
+}
+
+nav input:checked ~ .hamburger {
+  background: transparent;
+}
+nav input:checked ~ .hamburger::before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+  transition: 0.5s;
+}
+nav input:checked ~ .hamburger::after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+  transition: 0.5s;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: #0a7ca5;
+  text-decoration: underline;
+}
+
+.naslovni-tekst {
+  position: relative;
+  top: 100px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.naslovni-tekst span {
+  font-family: "Playfair Display", serif;
+  font-size: 89px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  width: 180px;
+  height: 50px;
+  background-color: #0a7ca5;
+  border-style: none;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  margin-top: -60px !important;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 65px -8px rgba(25, 146, 191, 0.27);
+  padding: 100px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.tablice-ponuda {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ponude {
+  font-size: 20px;
+  border-collapse: collapse;
+  border: 2px solid #0a7ca5;
+  width: 380px;
+  background-color: white;
+  z-index: 1;
+}
+
+td span {
+  font-weight: 500;
+}
+
+.ponude th {
+  border-bottom: 2px solid #0a7ca5;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 25px 0;
+}
+
+.ponude td {
+  border-bottom: 1px solid #0a7ca5;
+  margin: auto;
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+.ponude td:last-child {
+  border-bottom: none;
+}
+
+.ponude tr:nth-child(2) {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.galerija {
+  box-shadow: 0 -120px 0 0px #0a7ca5;
+  background-color: #0a7ca5;
+  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+.galerija h2 {
+  color: white;
+}
+
+.galerija h3 {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.galerija h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.3s;
+  gap: 5%;
+  list-style: none;
+}
+.slide {
+  flex: 0 0 30%;
+}
+
+.slide div {
+  padding: 35px;
+  background: white;
+}
+
+.slider-slika {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+  border: solid;
+  border: 1px solid white;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+.lokacija {
+  margin-top: 60px;
+}
+
+.lokacija p {
+  font-size: 28px;
+  padding-bottom: 25px;
+  font-weight: 400;
+}
+
+.kontakti {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 65px -8px rgba(25, 146, 191, 0.27);
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.kontakti h3 {
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+
+.kontakti a {
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+}
+
+.partneri {
+  background-color: #1993bf35;
+  padding-bottom: 60px;
+  margin-top: 60px;
+}
+
+.partneri div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partneri img {
+  height: 160px;
+}
+
+footer {
+  background-color: #0a7ca5;
+  padding: 40px 0;
+}
+.footer-content {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+footer ul {
+  list-style: none;
+}
+footer li {
+  padding: 7px 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+footer i {
+  font-size: 25px;
+}
+.footer-kontakti {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-kontakti p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.drustvene-mreze {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.copyright {
+  color: white;
+  width: 100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 75%;
+  }
+
+  header {
+    height: 450px;
+  }
+
+  nav input:checked ~ .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .hamburger,
+  .toggle-navigation {
+    display: block;
+  }
+  nav {
+    padding-top: 0;
+  }
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 150px;
+    color: #ffffff;
+    background-color: #0a7ca5e9;
+    height: 100vh;
+    width: 100vw;
+
+    padding: 0;
+  }
+  nav a:hover {
+    color: #ffffff;
+  }
+
+  .naslovni-tekst {
+    top: 80px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .naslovni-tekst h1 {
+    font-size: 40px;
+  }
+  .naslovni-tekst span {
+    font-size: 64px;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    gap: 0;
+  }
+
+  main {
+    padding: 20px;
+    margin-top: -30px !important;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  main p {
+    font-size: 14px;
+  }
+
+  .tablice-ponuda {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .ponude {
+    width: 100%;
+  }
+  th {
+    font-size: 17px;
+  }
+  td {
+    font-size: 16px;
+  }
+
+  .galerija {
+    box-shadow: 0 -60px 0 0px #0a7ca5;
+  }
+  .galerija h3 {
+    font-size: 16px;
+  }
+  .galerija h4 {
+    font-size: 27px;
+  }
+  .slides-container {
+    gap: 5%;
+  }
+  .slide {
+    flex: 0 0 80%;
+  }
+  .slider-slika {
+    height: 260px;
+  }
+
+  .lokacija p {
+    font-size: 20px;
+  }
+
+  .kontakti h3 {
+    font-size: 16px;
+  }
+  .kontakti p {
+    font-size: 20px;
+  }
+  .kontakti a {
+    font-size: 12px;
+  }
+  .kontakti {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+  .kontakt {
+    width: calc(100% - 40px);
+    background-color: #ffffff;
+    box-shadow: 0px 10px 65px -8px rgba(25, 146, 191, 0.27);
+    padding: 20px;
+  }
+
+  .partneri div {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .partneri div img:first-child,
+  .partneri div img:nth-child(3) {
+    width: 40%;
+    height: auto;
+  }
+  .partneri div img:nth-child(2) {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .footer-kontakti {
+    align-items: center;
+  }
+  .footer-title {
+    font-size: 37px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  .footer-kontakti span {
+    font-size: 20px;
+  }
+}
