@@ -21,6 +21,10 @@ header {
   background-position: right bottom;
   height: 600px;
 }
+.openbtn,
+.closebtn {
+  display: none;
+}
 
 section {
   padding-top: 60px;
@@ -334,17 +338,18 @@ footer i {
   }
 
   .openbtn {
+    display: block;
     position: fixed;
     top: 10px;
     left: 5px;
     z-index: 2;
   }
-  .sidenav .closebtn {
+  .closebtn {
+    display: block;
     position: absolute;
-    top: 100px;
-    right: 25px;
+    top: 10px;
+    left: 5px;
     font-size: 36px;
-    margin-left: 50px;
   }
   .menu {
     display: none;
