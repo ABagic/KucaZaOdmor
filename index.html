@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ovo je stranica kuće za odmor Nikola">
     <title>Kuća za odmor Grijak</title>
@@ -17,14 +18,14 @@
 <body>
     <header id="naslovnica">
         <nav class="wrapper">
-            <input type="checkbox" class="toggle-navigation">
-            <div class="hamburger"></div>
-            <ul class="menu">
-                <li><a aria-label="link za naslovnicu" href="#naslovnica">Naslovnica</a></li>
-                <li><a aria-label="link za galeriju" href="#opis">O kući</a></li>
-                <li><a aria-label="link za galeriju" href="#galerija">Galerija</a></li>
-                <li><a aria-label="link za lokaciju" href="#lokacija">Lokacija</a></li>
-                <li><a aria-label="link za kontakt" href="#kontakt">Kontakt</a></li>
+            <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+            <ul class="menu" id="menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                <li onclick="closeNav()"><a aria-label="link za naslovnicu" href="#naslovnica">Naslovnica</a></li>
+                <li onclick="closeNav()"><a aria-label="link za galeriju" href="#opis">O kući</a></li>
+                <li onclick="closeNav()"><a aria-label="link za galeriju" href="#galerija">Galerija</a></li>
+                <li onclick="closeNav()"><a aria-label="link za lokaciju" href="#lokacija">Lokacija</a></li>
+                <li onclick="closeNav()"><a aria-label="link za kontakt" href="#kontakt">Kontakt</a></li>
                 <li><a aria-label="link za facebook profil"
                         href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"><i
                             class="fa-brands fa-facebook-f"></i></a></li>
@@ -169,7 +170,7 @@
         </div>
         <div class="copyright">
             <p>© 2023</p>
-            <img src="designvibe_logo_bijelo.svg">
+            <img src="designvibe_logo_bijelo.svg" alt="logo studija koji je kreirao web stranicu">
         </div>
     </footer>
 
