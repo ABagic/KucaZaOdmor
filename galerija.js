@@ -5,13 +5,19 @@ let currentIndex = 0;
 let numericGapValue = 0;
 let slide = 0;
 let slideCount = 0;
+let width = screen.width;
+console.log(width);
 
 function openNav() {
-  document.getElementById("menu").style.display = "flex";
+  if (width < 770) {
+    document.getElementById("menu").style.display = "flex";
+  }
 }
 
 function closeNav() {
-  document.getElementById("menu").style.display = "none";
+  if (width < 770) {
+    document.getElementById("menu").style.display = "none";
+  }
 }
 
 //proba
