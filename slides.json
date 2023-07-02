@@ -1,74 +1,38 @@
 [
   {
     "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
+    "subtitle": "Stražnja strana",
+    "imageSrc": "slike/Untitled-1.webp",
+    "imageAlt": "Stražnja strana"
+  },
+  {
+    "title": "UNUTAR KUĆE",
+    "subtitle": "Kuhinja",
+    "imageSrc": "slike/Untitled-2.webp",
+    "imageAlt": "Kuhinja"
   },
   {
     "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
+    "subtitle": "Ulaz",
+    "imageSrc": "slike/Untitled-3.webp",
+    "imageAlt": "Ulaz"
   },
   {
     "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
+    "subtitle": "Pogled sa ceste",
+    "imageSrc": "slike/Untitled-4.webp",
+    "imageAlt": "Pogled sa ceste"
   },
   {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
+    "title": "UNUTAR KUĆE",
+    "subtitle": "Spavaća soba",
+    "imageSrc": "slike/Untitled-5.webp",
+    "imageAlt": "Spavaća soba"
   },
   {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
-  },
-  {
-    "title": "VAN KUĆE",
-    "subtitle": "2",
-    "imageSrc": "izvana/IMG_20220614_130745.jpg",
-    "imageAlt": "izvana slika"
+    "title": "UNUTAR KUĆE",
+    "subtitle": "Dnevni boravak",
+    "imageSrc": "slike/Untitled-6.webp",
+    "imageAlt": "Dnevni boravak"
   }
 ]
