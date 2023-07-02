@@ -6,6 +6,14 @@ let numericGapValue = 0;
 let slide = 0;
 let slideCount = 0;
 
+function openNav() {
+  document.getElementById("menu").style.display = "flex";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.display = "none";
+}
+
 //proba
 fetch("slides.json")
   .then((response) => response.json())
