@@ -9,7 +9,7 @@
 }
 
 header {
-  background-image: url("slike/ulaz2.png"),
+  background-image: url("slike/hero.webp"),
     linear-gradient(
       160deg,
       #ffffff 22.05%,
@@ -17,7 +17,8 @@ header {
       rgba(25, 147, 191, 0.316) 99.68%
     );
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: right bottom;
   height: 600px;
 }
 
@@ -37,64 +38,6 @@ nav {
 }
 .menu li {
   list-style: none;
-}
-
-.hamburger {
-  position: absolute;
-  top: 40px;
-  width: 30px;
-  height: 5px;
-  background: black;
-  cursor: pointer;
-  z-index: 3;
-}
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 5px;
-  left: 0;
-  background: black;
-}
-.hamburger::before {
-  top: -10px;
-  transition: 0.5s;
-}
-.hamburger::after {
-  top: 10px;
-  transition: 0.5s;
-}
-
-.toggle-navigation {
-  position: absolute;
-  top: 28px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 4;
-}
-
-.hamburger,
-.toggle-navigation {
-  display: none;
-}
-
-nav input:checked ~ .hamburger {
-  background: transparent;
-}
-nav input:checked ~ .hamburger::before {
-  top: 0;
-  transform: rotate(-45deg);
-  width: 30px;
-  transition: 0.5s;
-}
-nav input:checked ~ .hamburger::after {
-  top: 0;
-  transform: rotate(45deg);
-  width: 30px;
-  transition: 0.5s;
 }
 
 nav a {
@@ -247,8 +190,6 @@ td span {
 
 .slider-slika {
   width: 100%;
-  height: 450px;
-  object-fit: cover;
 }
 
 .dots-container {
@@ -320,7 +261,7 @@ td span {
 
 footer {
   background-color: #0a7ca5;
-  padding: 40px 0;
+  padding: 40px 0 10px;
 }
 .footer-content {
   display: flex;
@@ -378,18 +319,32 @@ footer i {
 
   header {
     height: 450px;
+    background-image: linear-gradient(
+        rgba(8, 60, 109, 0.668) 42.59%,
+        rgba(8, 65, 114, 0.598) 99.68%
+      ),
+      url("slike/hero.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
   }
 
-  nav input:checked ~ .menu {
-    display: flex;
-    justify-content: center;
-  }
-  .hamburger,
-  .toggle-navigation {
-    display: block;
-  }
   nav {
     padding-top: 0;
+  }
+
+  .openbtn {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    z-index: 2;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
   .menu {
     display: none;
@@ -399,16 +354,20 @@ footer i {
     justify-content: start;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px 0 20px 150px;
     color: #ffffff;
-    background-color: #0a7ca5e9;
+    background-color: #0a7ca5;
     height: 100vh;
     width: 100vw;
-
     padding: 0;
   }
+
   nav a:hover {
     color: #ffffff;
+  }
+  nav a:active ~ .menu {
+    display: none;
   }
 
   .naslovni-tekst {
@@ -468,9 +427,6 @@ footer i {
   }
   .slide {
     flex: 0 0 80%;
-  }
-  .slider-slika {
-    height: 260px;
   }
 
   .lokacija p {
