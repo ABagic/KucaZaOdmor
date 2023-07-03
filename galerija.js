@@ -6,7 +6,9 @@ let numericGapValue = 0;
 let slide = 0;
 let slideCount = 0;
 let width = screen.width;
-console.log(width);
+
+let startX = 0;
+let endX = 0;
 
 function openNav() {
   if (width < 770) {
@@ -78,6 +80,30 @@ const createSlides = (slidesData) => {
         dot.classList.add("active");
       }
     });
+  };
+
+  // Handle touch start event
+  slidesContainer.addEventListener("touchstart", (event) => {
+    startX = event.touches[0].clientX;
+  });
+
+  // Handle touch end event
+  slidesContainer.addEventListener("touchend", (event) => {
+    endX = event.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  // Handle swipe gesture
+  const handleSwipe = () => {
+    const swipeThreshold = Math.abs(startX - endX);
+
+    if (swipeThreshold > 50) {
+      if (startX > endX && currentIndex < slideCount - 1) {
+        moveToSlide(currentIndex + 1); // Move to the next slide
+      } else if (startX < endX && currentIndex > 0) {
+        moveToSlide(currentIndex - 1); // Move to the previous slide
+      }
+    }
   };
 
   // Move to a specific slide
