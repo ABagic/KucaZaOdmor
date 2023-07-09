@@ -14,48 +14,49 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-transparent fixed-top navbar-expand-md">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#o_kuci" data-bs-dismiss="offcanvas">O kući</a>
-                            </li>
-                            <li class=" nav-item">
-                                <a class="nav-link" href="#galerija" onclick="closeOffcanvas()">Galerija</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#lokacija" onclick="closeOffcanvas()">Lokacija</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#kontakt" onclick="closeOffcanvas()">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"
-                                    aria-label="link za facebook profil" target="_blank"><iconify-icon
-                                        icon="eva:facebook-fill"></iconify-icon></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.instagram.com/kucazaodmornikola/"
-                                    aria-label="link za instagram profil" target="_blank"><iconify-icon
-                                        icon="ei:sc-instagram"></iconify-icon></a>
-                            </li>
-                        </ul>
-                    </div>
+    <nav class="navbar bg-transparent fixed-top navbar-expand-md wrapper">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#o_kuci" data-bs-dismiss="offcanvas">O kući</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="#galerija" onclick="closeOffcanvas()">Galerija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lokacija" onclick="closeOffcanvas()">Lokacija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt" onclick="closeOffcanvas()">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"
+                                aria-label="link za facebook profil" target="_blank"><iconify-icon
+                                    icon="eva:facebook-fill"></iconify-icon></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/kucazaodmornikola/"
+                                aria-label="link za instagram profil" target="_blank"><iconify-icon
+                                    icon="ei:sc-instagram"></iconify-icon></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <header>
+
         <div class="wrapper naslovni-tekst">
             <h1>Kuća za odmor<span><br>"Nikola"</span></h1>
             <div class="linkovi">
@@ -199,10 +200,10 @@
             alt="logo Lika Desination Smart Sustainable Destination">
         <img class="iqm" src="partneri/logo_IQM_Lika.png" alt="logo IQM Lika">
     </section>
-    <footer class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-3 wrapper footer-sadrzaj">
-            <h4 class="col-12">Kuća za odmor "Nikola"</h4>
-            <div class="footer-navigacija center">
+    <footer>
+        <div class="wrapper footer-sadrzaj wrapper">
+            <h4>Kuća za odmor "Nikola"</h4>
+            <div class="footer-navigacija">
                 <a href="#o_kuci">O kući</a>
                 <a href="#ponuda">Ponuda</a>
                 <a href="#galerija">Galerija</a>
