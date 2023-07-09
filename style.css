@@ -74,7 +74,6 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
-  z-index: -1;
 }
 
 .navbar iconify-icon {
@@ -89,6 +88,7 @@ header {
   top: 5rem;
   left: 10%;
   color: #fff;
+  z-index: 2;
 }
 .linkovi {
   margin-top: 20px;
@@ -110,6 +110,7 @@ header {
 }
 
 main div {
+  position: relative;
   padding: 1.5rem;
   background: rgb(255, 255, 255);
   box-shadow: 0px 10px 65px -8px rgba(25, 146, 191, 0.27);
@@ -288,6 +289,8 @@ footer {
 }
 .footer-sadrzaj {
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 footer h4 {
   font-size: var(--h4);
@@ -363,6 +366,10 @@ footer a {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-sadrzaj {
+    flex-direction: row;
     justify-content: space-between;
   }
   .kontakti {
