@@ -7,177 +7,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ovo je stranica kuće za odmor Nikola">
     <title>Kuća za odmor Grijak</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/54a60e8e7b.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
-    <header id="naslovnica">
-        <nav class="wrapper">
-            <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
-            <ul class="menu" id="menu">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-                <li onclick="closeNav()" class="navlink"><a aria-label="link za naslovnicu" href="#naslovnica">Naslovnica</a></li>
-                <li onclick="closeNav()" class="navlink"><a aria-label="link za galeriju" href="#opis">O kući</a></li>
-                <li onclick="closeNav()" class="navlink"><a aria-label="link za galeriju" href="#galerija">Galerija</a>
-                </li>
-                <li onclick="closeNav()" class="navlink"><a aria-label="link za lokaciju" href="#lokacija">Lokacija</a>
-                </li>
-                <li onclick="closeNav()" class="navlink"><a aria-label="link za kontakt" href="#kontakt">Kontakt</a>
-                </li>
-                <li class="navlink"><a aria-label="link za facebook profil"
-                        href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"><i
-                            class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a aria-label="link za  instagram profil" href="https://www.instagram.com/kucazaodmornikola/"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-        <div class="wrapper naslovni-tekst">
-            <h1>Kuća za odmor </h1><span>"Nikola"</span>
-            <div class="buttons">
-                <a aria-label="link za airbnb profil"
-                    href="https://hr.airbnb.com/rooms/35737091?s=67&unique_share_id=054f41e5-f93f-4c57-8f79-3181bf9a8894">Airbnb</a>
-                <a aria-label="link za slanje maila" href="mailto:kucazaodmornikola14@gmail.com"
-                    target="_blank">e-mail</a>
-            </div>
-        </div>
-    </header>
-
-    <main class="wrapper">
-        <h2>O kući</h2>
-        <p>Na mirnom i tihom mjestu u Vrhovinama smještena je kuća za odmor Nikola. Okružena šumom, brežuljcima te
-            ponekim zvukom ovaca u blizini, savršena je za odmor od bučnog gradskog života. U kući, koja je
-            namijenjena za boravak 6 osoba, nalaze se 2 spavaće sobe, WC, kupaonica, kuhinja, ostava i dnevni
-            boravak. Prostrano dvorište je ograđeno, stoga su i Vaši kućni ljubimci dobrodošli. Kako ne biste u
-            potpunosti izgubili kontakt s „vanjskim svijetom“, možete se spojiti na Wi-Fi. Ipak, nastojte se što
-            više povezati s prirodom te boraviti na svježem zraku koji je idealan za miran san. Ako ste
-            avanturistički tip, posjetite zip-line Pazi Medo, koji je od kuće udaljen svega 5 km. Ostale aktivnosti
-            koje možete isprobati sami ili sa svojim najbližima su planinarenje, biciklizam, ribolov,kajakarenje… I
-            to sve samo na pola sata vožnje od kuće Nikola!</p>
-    </main>
-
-    <section class="ponuda wrapper" id="opis">
-        <h2>Ponuda</h2>
-        <div class="tablice-ponuda">
-            <table class="ponude">
-                <tr>
-                    <th colspan="3">SPAVAĆE SOBE I KREVETI</th>
-                </tr>
-                <tr>
-                    <td><span>Spavaća soba 1</span> <br><i class="fa-solid fa-bed"></i> 3 jednostruka kreveta</td>
-                    <td><span>Spavaća soba 2</span> <br><i class="fa-solid fa-bed"></i> 2 jednostruka kreveta</td>
-                    <td><span>Dnevni boravak</span> <br><i class="fa-solid fa-couch"></i> 1 kauč</td>
-                </tr>
-            </table>
-            <table class="ponude">
-                <tr>
-                    <th colspan="4">USLUGE</th>
-                </tr>
-                <tr>
-                    <td><i class="fa-solid fa-car-rear"></i> Besplatan parking u sklopu smještaja</td>
-                    <td><i class="fa-solid fa-paw"></i> Kućni ljubimci dobrodošli</td>
-                    <td><i class="fa-solid fa-suitcase"></i> Dozvoljeno ostavljanje prtljage</td>
-                    <td><i class="fa-solid fa-smoking"></i> Dozvoljeno pušenje</td>
-                </tr>
-            </table>
-            <table class="ponude">
-                <tr>
-                    <th colspan="6">ZABAVA</th>
-                </tr>
-                <tr>
-                    <td><i class="fa-solid fa-mountain-sun"></i> Pogled na planine</td>
-                    <td><i class="fa-solid fa-seedling"></i> Pogled na dvorište</td>
-                    <td><i class="fa-solid fa-tv"></i> TV</td>
-                    <td><i class="fa-solid fa-wifi"></i> Wi-Fi</td>
-                    <td><i class="fa-solid fa-seedling"></i> Privatno stražnje dvorište</td>
-                    <td><i class="fa-solid fa-fire-burner"></i> Roštilj</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <section class="galerija" id="galerija">
-        <h2 class="wrapper">Galerija</h2>
-        <ul class="slides-container" id="slides-container">
-        </ul>
-        <div class="dots-container"></div>
-    </section>
-
-
-    <section class="wrapper lokacija" id="lokacija">
-        <h2>Lokacija</h2>
-        <p><i class="fa-solid fa-location-dot"></i>Seoci 14 A, Vrhovine</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.2893585078673!2d15.404942515751891!3d44.85640378181243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4763e137b16125ad%3A0xab15ffa034e70afd!2sKu%C4%87a%20za%20odmor%20%22Nikola%22!5e0!3m2!1shr!2shr!4v1590766162433!5m2!1shr!2shr"
-            width="100%" height="450px" allowfullscreen="" aria-hidden="false" tabindex="0"
-            title="google maps"></iframe>
-    </section>
-
-    <section class="wrapper" id="kontakt">
-        <h2>Kontakt</h2>
-        <div class="kontakti">
-            <div class="kontakt">
-                <h3>BROJ TELEFONA</h3>
-                <p><i class="fa-solid fa-phone"></i> 091 622 0279</p>
-            </div>
-            <div class="kontakt">
-                <h3>EMAIL ADRESA</h3>
-                <a aria-label="link za slanje maila" href="mailto:kucazaodmornikola14@gmail.com" target="_blank"><i
-                        class="fa-solid fa-at"></i>
-                    kucazaodmornikola14@gmail.com</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="partneri">
-        <div class="wrapper">
-            <img src="partneri/NP_plitvicka_jezera_logo-07.png" alt="logo plitvičkih jezera">
-            <img src="partneri/Lika_Destination_Smart_Sustainable_Destination.png" alt="logo lika destination">
-            <img src="partneri/logo_IQM_Lika.png" alt="logo IQM Lika">
-        </div>
-    </section>
-
-    <footer>
-        <div>
-            <div class="footer-content wrapper">
-
-                <p class="footer-title">Kuća za odmor "Nikola"</p>
-                <div>
-                    <ul>
-                        <li><a aria-label="link za naslovnicu" href="#naslovnica">Naslovnica</a></li>
-                        <li><a aria-label="link za galeriju" href="#opis">O kući</a></li>
-                        <li><a aria-label="link za galeriju" href="#galerija">Galerija</a></li>
-                        <li><a aria-label="link za lokaciju" href="#lokacija">Lokacija</a></li>
-                        <li><a aria-label="link za kontakt" href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-kontakti">
-                    <span>Kontaktirajte nas</span>
-                    <p><i class="fa-solid fa-phone"></i> 091 622 0279</p>
-                    <p><a a aria-label="link za slanje maila" href="mailto:kucazaodmornikola14@gmail.com"
-                            target="_blank">
-                            <i class="fa-solid fa-at"></i> kucazaodmornikola14@gmail.com</a></p>
-                    <div class="drustvene-mreze">
-                        <a aria-label="link za facebook profil"
-                            href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a aria-label="link za  instagram profil" href="https://www.instagram.com/kucazaodmornikola/"><i
-                                class="fa-brands fa-instagram"></i></a>
+    <header>
+        <nav class="navbar bg-transparent fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#o_kuci" data-bs-dismiss="offcanvas">O kući</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="#galerija" onclick="closeOffcanvas()">Galerija</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lokacija" onclick="closeOffcanvas()">Lokacija</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontakt" onclick="closeOffcanvas()">Kontakt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"
+                                    aria-label="link za facebook profil" target="_blank"><iconify-icon
+                                        icon="eva:facebook-fill"></iconify-icon></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/kucazaodmornikola/"
+                                    aria-label="link za instagram profil" target="_blank"><iconify-icon
+                                        icon="ei:sc-instagram"></iconify-icon></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </nav>
+        <div class="wrapper naslovni-tekst">
+            <h1>Kuća za odmor<span><br>"Nikola"</span></h1>
+            <div class="linkovi">
+                <a href="https://hr.airbnb.com/rooms/35737091?s=67&unique_share_id=054f41e5-f93f-4c57-8f79-3181bf9a8894"
+                    target="_blank">Airbnb</a>
+                <a href="mailto:kucazaodmornikola14@gmail.com" target="_blank">e-mail</a>
+            </div>
         </div>
-        <div class="copyright">
+    </header>
+    <main class="wrapper" id="o_kuci">
+        <div>
+            <h2>O kući</h2>
+            <p>Na mirnom i tihom mjestu u Vrhovinama smještena je kuća za odmor Nikola. Okružena šumom, brežuljcima te
+                ponekim zvukom ovaca u blizini, savršena je za odmor od bučnog gradskog života. U kući, koja je
+                namijenjena za boravak 6 osoba, nalaze se 2 spavaće sobe, WC, kupaonica, kuhinja, ostava i dnevni
+                boravak. Prostrano dvorište je ograđeno, stoga su i Vaši kućni ljubimci dobrodošli. Kako ne biste u
+                potpunosti izgubili kontakt s „vanjskim svijetom“, možete se spojiti na Wi-Fi. Ipak, nastojte se što
+                više povezati s prirodom te boraviti na svježem zraku koji je idealan za miran san. Ako ste
+                avanturistički tip, posjetite zip-line Pazi Medo, koji je od kuće udaljen svega 5 km. Ostale aktivnosti
+                koje možete isprobati sami ili sa svojim najbližima su planinarenje, biciklizam, ribolov,kajakarenje… I
+                to sve samo na pola sata vožnje od kuće Nikola!</p>
+        </div>
+    </main>
+    <section class="wrapper ponuda" id="ponuda">
+        <h2>Ponuda</h2>
+        <div class="tablice">
+            <div class="tablica">
+                <h3>SPAVAĆE SOBE I KREVETI</h3>
+                <div class="smjestaj">
+                    <span>Spavaća soba 1</span>
+                    <div>
+                        <iconify-icon icon="mdi:bed-queen-outline"></iconify-icon>
+                        <p>3 jednostruka kreveta</p>
+                    </div>
+                </div>
+                <div class="smjestaj">
+                    <span>Spavaća soba 2</span>
+                    <div>
+                        <iconify-icon icon="mdi:bed-queen-outline"></iconify-icon>
+                        <p>2 jednostruka kreveta</p>
+                    </div>
+                </div>
+                <div class="smjestaj">
+                    <span>Dnevni boravak</span>
+                    <div>
+                        <iconify-icon icon="mdi:sofa-single-outline"></iconify-icon>
+                        <p>1 kauč</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tablica">
+                <h3>USLUGE</h3>
+                <div class="red">
+                    <iconify-icon icon="la:car"></iconify-icon>
+                    <p>Besplatan parking u sklopu smještaja</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="ph:paw-print-thin"></iconify-icon>
+                    <p>Kućni ljubimci dobrodošli</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="mdi:luggage"></iconify-icon>
+                    <p>Dozvoljeno ostavljanje prtljage</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="cil:smoke"></iconify-icon>
+                    <p>Dozvoljeno pušenje</p>
+                </div>
+            </div>
+            <div class="tablica">
+                <h3>ZABAVA</h3>
+                <div class="red">
+                    <iconify-icon icon="ph:mountains-light"></iconify-icon>
+                    <p>Pogled na planine</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="pepicons-pencil:flower"></iconify-icon>
+                    <p>Pogled na dvorište</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="heroicons:tv"></iconify-icon>
+                    <p>TV</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="clarity:wifi-line"></iconify-icon>
+                    <p>Wi-Fi</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="pepicons-pencil:flower"></iconify-icon>
+                    <p>Privatno stražnje dvorište</p>
+                </div>
+                <div class="red">
+                    <iconify-icon icon="iconoir:bbq"></iconify-icon>
+                    <p>Roštilj</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="galerija" id="galerija">
+        <h2 class="wrapper">Galerija</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="wrapper lokacija" id="lokacija">
+        <h2>Lokacija</h2>
+        <div>
+            <iconify-icon icon="ion:location-sharp"></iconify-icon>
+            <p>Seoci 14A, Vrhovine</p>
+        </div>
+        <iframe title="google map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64003.654843394965!2d15.362664336560986!3d44.85030996094491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4763e137b16125ad%3A0xab15ffa034e70afd!2sKu%C4%87a%20za%20odmor%20%22Nikola%22!5e0!3m2!1shr!2shr!4v1688415601620!5m2!1shr!2shr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="wrapper kontakt" id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="kontakti">
+            <div class="kontakti-info">
+                <h3>BROJ TELEFONA</h3>
+                <div>
+                    <iconify-icon icon="mdi:phone"></iconify-icon>
+                    <p>091 622 0279</p>
+                </div>
+            </div>
+            <div class="kontakti-info">
+                <h3>E-MAIL ADRESA</h3>
+                <div>
+                    <iconify-icon icon="ri:at-line"></iconify-icon>
+                    <a href="mailto:kucazaodmornikola14@gmail.com" target="_blank">kucazaodmornikola14@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partneri" id="partneri">
+        <img class="np" src="partneri/NP_plitvicka_jezera_logo-07.png" alt="logo NP plitvicka jezera">
+        <img class="lika-destination" src="partneri/Lika_Destination_Smart_Sustainable_Destination.png"
+            alt="logo Lika Desination Smart Sustainable Destination">
+        <img class="iqm" src="partneri/logo_IQM_Lika.png" alt="logo IQM Lika">
+    </section>
+    <footer class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 wrapper footer-sadrzaj">
+            <h4 class="col-12">Kuća za odmor "Nikola"</h4>
+            <div class="footer-navigacija center">
+                <a href="#o_kuci">O kući</a>
+                <a href="#ponuda">Ponuda</a>
+                <a href="#galerija">Galerija</a>
+                <a href="#lokacija">Lokacija</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <div class="footer-kontakti">
+                <p>Kontaktirajte nas</p>
+                <div class="footer-kontakti-dio">
+                    <iconify-icon icon="mdi:phone"></iconify-icon>
+                    <a href="tel:091 622 02798">091 622 0279</a>
+                </div>
+                <div class="footer-kontakti-dio">
+                    <iconify-icon icon="ri:at-line"></iconify-icon>
+                    <a href="mailto:kucazaodmornikola14@gmail.com" target="_blank">kucazaodmornikola14@gmail.com</a>
+                </div>
+                <div class="drustvene-mreze">
+                    <a href="https://www.facebook.com/pages/category/Vacation-Home-Rental/Ku%C4%87a-za-odmor-Nikola-1629912450440235/"
+                        aria-label="link za facebook profil" target="_blank"><iconify-icon
+                            icon="eva:facebook-fill"></iconify-icon></a>
+                    <a href="https://www.instagram.com/kucazaodmornikola/" aria-label="link za instagram profil"
+                        target="_blank"><iconify-icon icon="ei:sc-instagram"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="designvibe">
             <p>© 2023</p>
-            <img src="designvibe_logo_bijelo.svg" alt="logo studija koji je kreirao web stranicu">
+            <img src="ikone/designvibe_logo_bijelo.svg" alt="Design Vibe studio logo">
         </div>
     </footer>
-
-    <script src="galerija.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
