@@ -1,28 +1,10 @@
-const slidesContainer = document.querySelector(".slides-container");
-const dotsContainer = document.querySelector(".dots-container");
+const slidesContainer = document.querySelector(".swiper-wrapper");
 const slidesPerPage = 3;
-let currentIndex = 0;
-let numericGapValue = 0;
+
 let slide = 0;
 let slideCount = 0;
-let width = screen.width;
 
-let startX = 0;
-let endX = 0;
-
-function openNav() {
-  if (width < 770) {
-    document.getElementById("menu").style.display = "flex";
-  }
-}
-
-function closeNav() {
-  if (width < 770) {
-    document.getElementById("menu").style.display = "none";
-  }
-}
-
-//proba
+//dohvat slideova
 fetch("slides.json")
   .then((response) => response.json())
   .then((data) => {
@@ -32,11 +14,11 @@ fetch("slides.json")
     console.error("Error:", error);
   });
 
-// Create slide divs
+//stvaranje slideova
 const createSlides = (slidesData) => {
   slidesData.forEach((slideData) => {
-    const slideDiv = document.createElement("li");
-    slideDiv.classList.add("slide");
+    const slideDiv = document.createElement("div");
+    slideDiv.classList.add("swiper-slide");
 
     const contentDiv = document.createElement("div");
 
@@ -59,91 +41,13 @@ const createSlides = (slidesData) => {
 
     slidesContainer.appendChild(slideDiv);
   });
-
-  const slides = Array.from(slidesContainer.children);
-
-  // Create dots
-  for (let i = 0; i < slides.length - slidesPerPage + 1; i++) {
-    const dot = document.createElement("button");
-    dot.classList.add("dot");
-    dot.setAttribute("title", `Dot ${i + 1}`);
-    dotsContainer.appendChild(dot);
-  }
-  const dots = Array.from(dotsContainer.children);
-  const slideCount = slides.length;
-
-  // Update active dot
-  const updateActiveDot = () => {
-    dots.forEach((dot, index) => {
-      dot.classList.remove("active");
-      if (index === currentIndex) {
-        dot.classList.add("active");
-      }
-    });
-  };
-
-  // Handle touch start event
-  slidesContainer.addEventListener("touchstart", (event) => {
-    startX = event.touches[0].clientX;
-  });
-
-  // Handle touch end event
-  slidesContainer.addEventListener("touchend", (event) => {
-    endX = event.changedTouches[0].clientX;
-    handleSwipe();
-  });
-
-  // Handle swipe gesture
-  const handleSwipe = () => {
-    const swipeThreshold = Math.abs(startX - endX);
-
-    if (swipeThreshold > 50) {
-      if (startX > endX && currentIndex < slideCount - 1) {
-        moveToSlide(currentIndex + 1); // Move to the next slide
-      } else if (startX < endX && currentIndex > 0) {
-        moveToSlide(currentIndex - 1); // Move to the previous slide
-      }
-    }
-  };
-
-  // Move to a specific slide
-  const moveToSlide = (index) => {
-    const offsetSlide = slide * index;
-    const offsetGap = numericGapValue * index;
-    slidesContainer.style.transform = `translateX(-${
-      offsetSlide + offsetGap
-    }px)`;
-    currentIndex = index;
-    updateActiveDot();
-  };
-
-  // Handle dot click event
-  dotsContainer.addEventListener("click", (event) => {
-    const dot = event.target;
-    if (dot.classList.contains("dot")) {
-      const dotIndex = dots.indexOf(dot);
-      moveToSlide(dotIndex);
-    }
-  });
-
-  // Gap size
-  const flexContainer = document.getElementById("slides-container");
-  function updateGapValue() {
-    const flexContainerStyles = window.getComputedStyle(flexContainer);
-    const gapValue = flexContainerStyles.gap;
-    numericGapValue = parseFloat(gapValue);
-    if (gapValue.indexOf("%") !== -1) {
-      const containerWidth = flexContainer.offsetWidth;
-      numericGapValue = containerWidth * (numericGapValue / 100);
-    }
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    slide = slideWidth;
-
-    moveToSlide(currentIndex);
-  }
-  updateGapValue();
-
-  window.addEventListener("resize", updateGapValue);
 };
-
 createSlides();
+
+function closeOffcanvas() {
+  // Find the close button of the offcanvas element
+  const closeButton = document.querySelector(".offcanvas .btn-close");
+
+  // Trigger the click event on the close button
+  closeButton.click();
+}
