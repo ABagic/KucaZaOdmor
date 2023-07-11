@@ -79,8 +79,22 @@ header {
 .navbar iconify-icon {
   font-size: var(--icon);
 }
+.offcanvas-body ul {
+  padding-left: 50px;
+}
+.offcanvas-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .sidebar {
   background-color: var(--primarna-boja);
+  width: 70% !important;
+}
+.nav-position {
+  position: fixed;
+  z-index: 4;
+  top: 0;
 }
 
 .naslovni-tekst {
@@ -286,6 +300,7 @@ main p {
 footer {
   background-color: var(--primarna-boja);
   padding: 1.75rem 0;
+  text-align: center;
 }
 .footer-sadrzaj {
   color: white;
@@ -323,6 +338,10 @@ footer a {
   display: flex;
   gap: 0.4rem;
   align-items: center;
+  justify-content: center;
+}
+.designvibe {
+  text-align: center;
 }
 .designvibe p {
   font-size: 0.75rem;
@@ -343,8 +362,36 @@ footer a {
     --icon: 2rem;
     --razmak: 60px;
   }
+  header {
+    height: 30.6rem;
+    background-image: linear-gradient(
+        rgba(83, 146, 204, 0.245) 42.59%,
+        rgba(35, 129, 210, 0.153) 99.68%
+      ),
+      url("slike/hero.webp");
+  }
+  .nav-position {
+    position: relative;
+    z-index: 4;
+    top: 0;
+  }
+  .navbar ul {
+    position: absolute;
+    left: 0;
+  }
+  .naslovni-tekst {
+    color: #000;
+  }
   .swiper-slide {
     width: 55%;
+  }
+  nav .container {
+    padding: 0;
+    font-size: var(--tekst);
+  }
+  .nav-link:hover {
+    color: var(--primarna-boja);
+    text-decoration: underline;
   }
   .navbar-wrapper {
     width: 80%;
@@ -368,9 +415,15 @@ footer a {
     flex-direction: column;
     justify-content: space-between;
   }
+  footer {
+    text-align: start;
+  }
   .footer-sadrzaj {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .footer-kontakti-dio {
+    justify-content: start;
   }
   .kontakti {
     padding: 60px;
