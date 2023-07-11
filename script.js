@@ -49,5 +49,7 @@ function closeOffcanvas() {
   const closeButton = document.querySelector(".offcanvas .btn-close");
 
   // Trigger the click event on the close button
-  closeButton.click();
+  setTimeout(() => {
+    closeButton.click();
+  }, 400);
 }
