@@ -42,7 +42,6 @@ const createSlides = (slidesData) => {
     slidesContainer.appendChild(slideDiv);
   });
 };
-createSlides();
 
 function closeOffcanvas() {
   // Find the close button of the offcanvas element
